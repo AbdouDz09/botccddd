@@ -67,7 +67,7 @@ client.on('ready',  () => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('d!adminbc')){
-if(!message.author.id === '476185102922285066') return;
+if(!message.author.id === '461468630773661699') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -80,7 +80,7 @@ m.sendMessage(args)
   
   client.on('message', msg => {
     if(msg.content === 'd!help')
-    msg.reply('Check Your DM :white_check_mark:')
+    msg.reply('اذهب خاص :heart: :white_check_mark:')
   });
   
   
@@ -95,7 +95,7 @@ m.sendMessage(args)
   client.on("message", message => {
     if (message.content === "d!help") {
      const embed = new Discord.RichEmbed() 
-         .setColor("#00FF00")
+         .setColor("RANDOM")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
