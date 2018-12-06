@@ -146,9 +146,9 @@ m.sendMessage(args)
 });
 
 client.on('ready', () => {
-    console.log(`Logged in as ${client.user.tag} !`);
-          lient.user.setGame(`d!help Dream !!,`,"http://twitch.tv/abdoufersaoui_dz")
-  
+console.log(`Logged in as ${client.user.tag} !`);
+client.user.setGame(`d!help Dream !!,`,"http://twitch.tv/abdoufersaoui_dz")
+client.user.setStatus("Dz")
   });
 
 client.login(process.env.TOKEN);
