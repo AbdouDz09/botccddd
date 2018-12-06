@@ -147,7 +147,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("d!help | Dream server",{type: 'WATCHING'});
+          lient.user.setGame(`d!help Dream !!,`,"http://twitch.tv/abdoufersaoui_dz")
   
   });
 
