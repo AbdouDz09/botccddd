@@ -52,17 +52,6 @@ message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 });
 
 
-client.on('ready',  () => {
-    console.log('تم تشغيل :Broadcast  ');
-    console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
-    console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
-    console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
-  });
-
-
-
-
-
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
@@ -75,22 +64,6 @@ m.sendMessage(args)
 }
 });
 
-
-
-  
-  client.on('message', msg => {
-    if(msg.content === 'd!help')
-    msg.reply('اذهب خاص :heart: :white_check_mark:')
-  });
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   client.on("message", message => {
     if (message.content === "d!help") {
@@ -138,9 +111,10 @@ m.sendMessage(args)
             .addField('``channels``' , `[ ${client.channels.size} ]` , true)
             .addField('``Users``' ,`[ ${client.users.size} ]` , true)
             .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
-            .addField('``My ID``' , `[ ${client.user.id} ]` , true)
-                  .addField('``My Prefix``' , `[-]` , true)
-                  .addField('``My Language``' , `[ Java Script ]` , true)
+            .addField('``My Prefix``' , `[d!]` , true)
+            .addField('``My owner``' , `[@AbdouFERSAOUI_Dz 👻็็็็็็็็็#5217]` , true)
+
+        
                     })
 }
 });
