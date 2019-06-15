@@ -153,9 +153,9 @@ m.sendMessage(args)
          .addField('❤سيرفر الدعم الفني', `  https://discord.gg/  `)
      message.author.send({embed});
    
-    }
+   }
    });
-&
+
 
 
 
@@ -176,9 +176,7 @@ m.sendMessage(args)
             .addField('``My Prefix``' , `[d!]` , true)
             .addField('``My owner``' , `[@!Dr-Abdou_Dz#5217]` , true)
 
-        
-                    })
-}
+  
 });
 
 client.on('ready', () => {
